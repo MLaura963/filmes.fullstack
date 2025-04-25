@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #F8F8F8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #87CEEB;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background: #FFD700;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-film,
+.film-list {
+    padding: 1rem;
+}
+
+.add-film form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.add-film input,
+.add-film textarea,
+.add-film select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-film button {
+    grid-column: span 2;
+    padding: 0.75rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.film-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.film-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.film-card img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.film-card h3 {
+    margin: 0.5rem 0;
+}
+
+.film-card p {
+    flex-grow: 1;
+}
+
+.film-card small {
+    color: #666;
+}
+
+.film-card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.film-card .edit {
+    background: #FFD700;
+    color: #000;
+}
+
+.film-card .delete {
+    background: #FF6347;
+    color: #fff;
+}
+
+.film img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}

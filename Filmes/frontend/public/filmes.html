@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Filmes - FilmsPWA</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/filmes.css" />
+</head>
+<body>
+  <header>
+    <h1>Meus Filmes</h1>
+    <button id="logout">Sair</button>
+  </header>
+  <section class="add-film">
+    <h2>Adicionar Filme</h2>
+    <form id="filmForm">
+      <input type="text" name="nome" placeholder="Nome*" required />
+      <input type="url" name="foto" placeholder="URL da Foto" />
+      <textarea name="descricao" placeholder="Descrição*" required></textarea>
+      <input type="text" name="diretor" placeholder="Diretor*" required />
+      <input type="number" name="anoLancamento" placeholder="Ano de Lançamento*" required />
+      <input type="number" name="anoAssistiu" placeholder="Ano que Assistiu" />
+      <select name="nota">
+        <option value="">Nota</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+  <section class="film-list" id="filmList"></section>
+  <script src="js/filmes.js"></script>
+</body>
+</html>

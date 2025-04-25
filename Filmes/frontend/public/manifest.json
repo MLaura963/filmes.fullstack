@@ -1,0 +1,8 @@
+{
+    "name": "Filmes PWA",
+    "short_name": "FilmsPWA",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#87CEEB"
+  }
